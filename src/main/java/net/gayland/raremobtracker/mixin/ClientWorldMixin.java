@@ -34,6 +34,7 @@ public abstract class ClientWorldMixin {
             if (!world.isClient) {
                 world.playSound(null, MinecraftClient.getInstance().player.getBlockPos(), SoundEvents.ENTITY_WITHER_SPAWN, SoundCategory.BLOCKS, 1.5f, 1f);
             }
+            entity.setGlowing(true);
         }
     }
 }
